@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import tandv.matebot.domain.model.Language;
+import tandv.matebot.domain.enums.Language;
 
 @Entity(name = "Users")
 @Data
@@ -26,4 +26,7 @@ public class UserEntity {
 
     @DefaultValue("EN")
     private Language language;
+
+    @NotNull
+    private String ChatId;
 }

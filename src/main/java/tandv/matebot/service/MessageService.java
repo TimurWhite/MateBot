@@ -4,8 +4,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import tandv.matebot.config.EnMessages;
 import tandv.matebot.config.UaMessages;
-import tandv.matebot.domain.model.Language;
-import tandv.matebot.domain.model.Messages;
+import tandv.matebot.domain.enums.Language;
+import tandv.matebot.domain.enums.Messages;
 
 @Service
 @AllArgsConstructor
@@ -19,4 +19,5 @@ public class MessageService {
             case UA -> uaMessages.getMessages().get(message.getPropertyName());
         };
     }
+
 }

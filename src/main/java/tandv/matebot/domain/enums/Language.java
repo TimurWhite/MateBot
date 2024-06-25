@@ -1,4 +1,4 @@
-package tandv.matebot.domain.model;
+package tandv.matebot.domain.enums;
 
 public enum Language {
     EN,
