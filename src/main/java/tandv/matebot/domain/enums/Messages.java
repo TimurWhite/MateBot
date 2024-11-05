@@ -4,6 +4,7 @@ import lombok.Getter;
 
 @Getter
 public enum Messages {
+    NONE("nothing"),
     HELLO("hello"),
     ONSTART("onstart"),
     NICK("nick"),

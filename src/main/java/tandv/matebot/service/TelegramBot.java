@@ -74,7 +74,7 @@ public class TelegramBot extends TelegramLongPollingBot {
     }
 
     private void sendMainMenuMessage(long chatId) {
-        String welcomeMessage = messageService.getMessage(HELLO, Language.EN);
+        String welcomeMessage = messageService.getMessage(HELLO, Language.EN); //Заменить Language через User
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(String.valueOf(chatId));
